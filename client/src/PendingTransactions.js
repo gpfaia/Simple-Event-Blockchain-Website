@@ -49,8 +49,7 @@ class PendingTransactions extends Component {
 
   getSubmit(event) {
     event.preventDefault();
-    const finalTransactions = this.state.changeArray
-                              .map(elem => this.state.transactionArray.splice(elem))
+    const finalTransactions =  this.state.changeArray.map(elem => this.state.transactionArray[elem])
     this.generateNextBlock(finalTransactions).then(response => 
       {if (response.status !== 200) {
         this.setState({ targetCheck: true })
