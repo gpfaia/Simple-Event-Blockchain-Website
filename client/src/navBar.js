@@ -13,7 +13,7 @@ class NavBar extends Component {
         <div>
           <ul className="header">
             <li><NavLink to="/ticketInfo">Ticket Exchange</NavLink></li>
-            <li><NavLink to="/PendingTransactions">View Pending Target</NavLink></li>
+            <li><NavLink to="/PendingTransactions">View Pending Transactions</NavLink></li>
             <li><NavLink to="/blockChainView">Block Chain</NavLink></li>
             <li><NavLink to="/setTarget">Change Target</NavLink></li>
           </ul>
